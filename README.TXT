@@ -33,7 +33,7 @@ q5: In the fifth question the procedure created is SendWatchTimeReport1(). Inter
   for execution: 
     call SendWatchTimeReport1();
   output:
-    it gives the shows and watchtime of each subscriber in different table.
+    it gives the shows and watchtime of each subscriber in different table irrespective of he has watched something or not.
 
 I have used the below table structures :
   -- Create Tables
