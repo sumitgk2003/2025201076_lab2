@@ -5,7 +5,7 @@ begin
 	declare subid int default 1;
     declare done int default 0;
     declare cursor_subid cursor for 
-		select distinct SubscriberID from watchhistory;
+		select SubscriberID from subscribers;
     declare continue handler for not found set done=1;
     open cursor_subid;
     watchReportLoop: loop
@@ -18,5 +18,5 @@ begin
 	close cursor_subid;
 end //
 delimiter ;
-
+ 
 call SendWatchTimeReport1();
